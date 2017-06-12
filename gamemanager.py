@@ -1,9 +1,8 @@
 from collections import namedtuple
 from time import time
 import logging
-from typing import Tuple, List
+from typing import Tuple, List, Any
 import datetime
-
 
 import gym
 
@@ -38,7 +37,7 @@ class TichuGame(object):
     def agents(self):
         return self._agents
 
-    def start_game(self, target_points=1000)->Tuple[Tuple[int, int], List[History]]:
+    def start_game(self, target_points=1000)->Tuple[Tuple[int, int], List[Any]]:
         """
         Starts the tichu game
         Returns a tuple containing the points the two teams made
@@ -75,7 +74,7 @@ class TichuGame(object):
 
         return GameOutcome(points, round_histories)
 
-    def _start_round(self)->Tuple[Tuple[int, int], History]:
+    def _start_round(self)->Tuple[Tuple[int, int], Any]:
         start_t = time()
         console_logger.info("[ROUND START] Start round...")
 

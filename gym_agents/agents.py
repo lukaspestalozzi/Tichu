@@ -15,8 +15,8 @@ from gym_tichu.envs.internals.utils import check_param, make_sure_path_exists
 from rl.core import Processor, Env
 from rl.policy import BoltzmannQPolicy, LinearAnnealedPolicy
 
-from .keras_rl_utils import make_dqn_rl_agent, make_sarsa_rl_agent, Processor_56x5, Processor_56x5_2_seperate, \
-    Processor_17x5_2, Processor_17x5_2_seperate
+from .keras_rl_utils import (make_dqn_rl_agent, make_sarsa_rl_agent, Processor_56x5, Processor_56x5_2_seperate,
+                             Processor_17x5_2, Processor_17x5_2_seperate)
 
 
 from .minimax import *
