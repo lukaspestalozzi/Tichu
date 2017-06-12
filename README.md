@@ -4,7 +4,9 @@ Implementation of the Tichu game and agents able to play it.
 -------------------------
 
 ## Dependencies
-All packages should be installable with pip or anaconda.
+**Python 3.6+**
+
+And following packages (all should be installable with pip or anaconda).
 
 - **profilehooks**: To profile/measure function execution time (https://pypi.python.org/pypi/profilehooks)
 - **keras-rl**: Neural Network Reinforcement learning (https://github.com/matthiasplappert/keras-rl). 
@@ -25,7 +27,7 @@ pip install -e .
 ```
 
 ## Play a game
-Gamelogs are written to the [logs](./logs) folder
+Gamelogs are written to the folder _Tichu/logs_
 
 To play a game against three agents:
 ```bash
@@ -45,7 +47,7 @@ python play.py --lazy
 More games can be found in the [game_starter.py](./game_starter.py)
 
 ## Train a Deep-Q-learning agent
-Training results are written to the [nn_training/logs](./nn_training/logs) folder.
+Training results are written to the folder _nn_training/logs_
 
 Example (train against random agents for 10000 steps (10000 decisions taken by the agent)): 
 ```bash
@@ -69,7 +71,7 @@ python nn_training/visualize_logs.py nn_training/logs/**/*.json --save
 
 
 # Run Experiments / Tournaments
-Experiment results are written to the [experiments/logs](./experiments/logs) folder.
+Experiment results are written to the folder _experiments/logs_.
 
 Launch the _**experiments/run_experiments.py**_ script.
 
