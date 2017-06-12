@@ -1,3 +1,14 @@
+# NN checkpoint weight files
+*checkpoint_weights*.h5f
+
+# Logs
+*.log
+nn_training/logs/*
+
+# IntelliJ / PyCharm
+.idea/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
